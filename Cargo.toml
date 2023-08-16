@@ -12,6 +12,7 @@ dioxus-router = { version = "0.4.0" }
 dioxus-web = { version = "0.4.0", features = ["hydrate"], optional = true }
 axum = { version = "0.6.12", optional = true }
 serde = { version = "1.0.159", features = ["derive"] }
+thiserror = "1.0"
 tokio = { version = "1.16.1", features = ["full"], optional = true }
 
 [features]

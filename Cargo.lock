@@ -423,6 +423,7 @@ dependencies = [
  "dioxus-router",
  "dioxus-web",
  "serde",
+ "thiserror",
  "tokio",
 ]
 

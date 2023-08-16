@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.puzzle button:nth-child(3n) {
+	@apply mr-1;
+}
+.puzzle button:nth-child(n + 19):nth-child(-n + 27),
+.puzzle button:nth-child(n + 46):nth-child(-n + 54) {
+	@apply mb-1;
+}
+.puzzle button:nth-child(27n + 1),
+.puzzle button:nth-child(27n + 4),
+.puzzle button:nth-child(27n + 7) {
+	@apply rounded-tl-lg;
+}
+.puzzle button:nth-child(27n + 3),
+.puzzle button:nth-child(27n + 6),
+.puzzle button:nth-child(27n + 9) {
+	@apply rounded-tr-lg;
+}
+.puzzle button:nth-child(27n + 19),
+.puzzle button:nth-child(27n + 22),
+.puzzle button:nth-child(27n + 25) {
+	@apply rounded-bl-lg;
+}
+.puzzle button:nth-child(27n + 21),
+.puzzle button:nth-child(27n + 24),
+.puzzle button:nth-child(27n + 27) {
+	@apply rounded-br-lg;
+}
